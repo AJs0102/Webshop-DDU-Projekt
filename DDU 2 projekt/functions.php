@@ -1,14 +1,10 @@
 
 <?php
-$price = 100;
 
-function getProductPrice($price) {
-    return $price + 25;
+function connectDB($host, $dbname) {
+    return "Connecting to " . $host . ", Database: " . $dbname;
 }
 
-// Call your function here
-
-getProductPrice($price);
-
-echo ("price is " . $price);
+// Call your function and display its result
+echo connectDB("localhost", "webshop");
 ?>
