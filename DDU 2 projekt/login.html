@@ -7,14 +7,22 @@
     <title>log in</title>
 </head>
 <body>
-<h1>Log in</h1>
-<form action="config.php" method="post">
-<label for="navn">Dit navn</label>
-<input type="text" id="navn" name="navn">
-
-<label for="email">Dit email</label>
-<input type="tekst" id="email" name="email">
-</form>
-
+    <main>
+        <div class="log in box">
+       
+         <h1>Log in</h1>
+            
+        <form action="login.php" method="post">
+         <!--labels for-->
+            <label for="email">Dit email</label>
+            <input type="text" id="email" name="email">
+            <label for="password">password</label>
+            <input type="text" id="password" name="password">
+            
+            <button type="submit">log in</button>
+        </form>
+        <p>Are you sure you have an account? <a href="signup.html"> Sign up</a></p>
+    </div>
+</main>
 </body>
 </html>
